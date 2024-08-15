@@ -24,9 +24,9 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-            "ATM Consultoria",
+          "ATM Consultoria",
           style: TextStyle(
-            color: Colors.white,
+              color: Colors.white,
               fontWeight: FontWeight.bold
           ),
         ),
@@ -38,6 +38,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset("imagens/logo.png"),
+            SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -52,6 +53,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   },
                   child: Image.asset("imagens/menu_empresa.png"),
                 ),
+                SizedBox(width: 30),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -65,6 +67,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                 ),
               ],
             ),
+            SizedBox(height: 30),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -79,6 +82,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                   },
                   child: Image.asset("imagens/menu_cliente.png"),
                 ),
+                SizedBox(width: 30),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(

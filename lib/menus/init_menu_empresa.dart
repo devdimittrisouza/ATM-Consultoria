@@ -10,6 +10,19 @@ class MenuEmpresa extends StatefulWidget {
 class _MenuEmpresaState extends State<MenuEmpresa> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Tela Empresa"),
+        backgroundColor: Colors.blue,
+      ),
+      body: Container(
+        padding: EdgeInsets.all(32),
+        child: Column(
+          children: [
+            Text("Tela empresa")
+          ],
+        ),
+      ),
+    );
   }
 }
